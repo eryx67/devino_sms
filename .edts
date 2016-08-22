@@ -1,0 +1,6 @@
+:node-sname "devino_edit"
+:name "devino_edit"
+:lib-dirs '("deps")
+:app-include-dirs '("include")
+:project-include-dirs '("deps")
+:start-command "erl -sname devino_edit"

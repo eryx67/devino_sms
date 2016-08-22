@@ -1,0 +1,22 @@
+{application, devino_sms,
+ [
+  {description, "API to http://www.devinotele.com/support/api"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  hackney,
+                  sutil,
+                  gproc,
+                  jiffy,
+                  lager
+                 ]},
+  {mod, { devino_sms_app, []}},
+  {env, [{base_url, <<"https://integrationapi.net/rest">>}
+        , {request_opts, [{connect_timeout, 8000}, {recv_timeout, 60000}]}
+        , {login, <<"FIXME">>}
+        , {password, <<"FIXME">>}
+        , {src_address, <<"TESTSMS">>}
+        ]}
+ ]}.

@@ -1,0 +1,21 @@
+%% -*-  coding: utf-8; mode: erlang; erlang-indent-level: 4; indent-tabs-mode: nil -*-
+%% @doc Devino SMS config
+
+%% @doc Login for SMS service
+{mapping, "devino_sms.login", "devino_sms.login",
+ [{datatype, string},
+  {default, "FIXME"}
+ ]
+}.
+%% @doc Password for SMS service
+{mapping, "devino_sms.password", "devino_sms.password",
+ [{datatype, string},
+  {default, "FIXME"}
+ ]
+}.
+%% @doc Source address for SMS service, must be registered on https://my.devinotele.com
+{mapping, "devino_sms.address", "devino_sms.src_address",
+ [{datatype, string},
+  {default, "TESTSMS"}
+ ]
+}.
